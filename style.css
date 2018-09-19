@@ -28,4 +28,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
+}
+#step2 {
+    display: none;
+}
+.card-img-top{
+    height:300px;
+    object-fit: cover;
 }
