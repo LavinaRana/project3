@@ -11,94 +11,108 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anaheim|Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
 </head>
 
 
 <body>
 
     <!-- Nav -->
-    <div class="container updates">
-        <button type="button" id="getUpdates" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Get Updates</button>
+    <div class="container updates" style="background: color #f9f9f9;">
+        <span>Stay Informed</span>
+        <button type="button" id="getUpdates" class="btn" data-toggle="modal" data-target="#exampleModal">Get Updates</button>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Get on our Mailing List.</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <div>
+                        <h6>Receive updates on current projects and events.</h6>
+                    </div>
+
                     <div id="signUpModal" class="modal-body">
                         <div id="step1">
-                            <form class="form-inline my-2 my-lg-0" id="emailSignUp" onsubmit="hideForm()">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+                            <form class="form-group my-2 my-lg-0" id="emailSignUp" onsubmit="hideForm()">
+                                <label for="exampleInputEmail1">*Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                             </form>
                         </div>
-                        <div id="step2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi, omnis voluptate quaerat
-                                tenetur aliquam et error architecto dolor nihil at dolore repellat. Deserunt in tenetur explicabo
-                                voluptate fugiat quam.</p>
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">get involved</button>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Current Projects
+                            </label>
                         </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Events & Meetings
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                News
+                            </label>
+                        </div>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+                        </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                    <div id="step2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi, omnis voluptate quaerat tenetur
+                            aliquam et error architecto dolor nihil at dolore repellat. Deserunt in tenetur explicabo voluptate
+                            fugiat quam.</p>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">get involved</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-grey">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">350 Austin</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">About
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="#">News</a>
+                <a class="nav-item nav-link" href="#">Get Involved</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Banner -->
-
-    <div class="hero-image">
+    <div <div class="hero-image">
+        <div class="box-transparent">
+        </div>
         <div class="hero-text">
-            <h1>I am John Doe</h1>
-            <p>And I'm a Photographer</p>
+            <h1>CLIMATE CHANGE IS REAL</h1>
+            <p>How climate change affected Hurricane Florence.</p>
             <button type="button" class="btn btn-primary">Learn More</button>
         </div>
     </div>
 
     <!-- About -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="background-color: #f9f9f9;">
         <div class="container">
             <h1 class="display-4" style="text-align: center">About 350 Austin</h1>
             <p class="lead" style="text-align: center">350 Austin is a local, grassroots organization committed to the goals and strategies of 350.org. We believe that
@@ -114,54 +128,47 @@
         <div class="card">
             <img class="card-img-top" src="images/space.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content
-                    is a little bit longer.</p>
+                <h5 class="card-title">Catastrophic Weather</h5>
+                <p class="card-text">Satellite images of Hurricane Florence.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">09.14.18</small>
             </div>
         </div>
         <div class="card">
             <img class="card-img-top" src="images/RiseForClimateTour.png" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card-title">Renewable on the rise</h5>
+                <p class="card-text">Local politician supports renewable energy.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">09.12.18</small>
             </div>
         </div>
         <div class="card">
             <img class="card-img-top" src="images/girl.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has
-                    even longer content than the first to show that equal height action.</p>
+                <h5 class="card-title">Call for help in New Delhi</h5>
+                <p class="card-text">Locals suffer as pollution rises in city.</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">09.10.18</small>
             </div>
         </div>
     </div>
 
-    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">350 Austin</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
-            </div>
+    <footer class="d-flex primary-color justify-content-center">
+        <div>
+            <p>About | Terms | Contact</p>
         </div>
-    </nav>
+        <div>
+            <span>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </span>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
